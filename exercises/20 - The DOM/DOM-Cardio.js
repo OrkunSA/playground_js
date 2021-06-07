@@ -1,21 +1,45 @@
 // Make a div
+const div = document.createElement("div");
 
 // add a class of wrapper to it
 
+div.classList.add("wrapper");
+
 // put it into the body
+document.body.appendChild(div);
 
 // make an unordered list
+
+const ul = `<ul>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+</ul>
+`;
 
 // add three list items with the words "one, two, three" in them
 // put that list into the above wrapper
 
+div.innerHTML = ul;
+
 // create an image
 
+const image = document.createElement("img");
+
 // set the source to an image
+
+image.src = "https://picsum.photos/500";
+
 // set the width to 250
+image.width = 250;
+image.height = 250;
 // add a class of cute
+image.classList.add("cute");
+
 // add an alt of Cute Puppy
+image.alt = "Cute Puppy";
 // Append that image to the wrapper
+div.appendChild(image);
 
 // with HTML string, make a div, with two paragraphs inside of it
 // put this div before the unordered list from above
